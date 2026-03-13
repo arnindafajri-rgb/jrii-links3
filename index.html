@@ -6,7 +6,6 @@
 <title>JRII Official</title>
 
 <style>
-
 body{
 margin:0;
 font-family:Arial;
@@ -60,21 +59,12 @@ transition:0.3s;
 transform:scale(1.08);
 box-shadow:0 0 15px white;
 }
-
-.footer{
-margin-top:30px;
-font-size:12px;
-opacity:0.6;
-}
-
 </style>
 </head>
 
 <body>
 
-<!-- AUDIO -->
-
-<audio id="dj" autoplay loop>
+<audio id="dj" loop>
 <source src="dj.mp3">
 </audio>
 
@@ -112,20 +102,18 @@ OPEN JASA BUAT MAP, DLL
 💰 Donasi Saweria
 </a>
 
-<p class="footer">
-© 2026 JRII Official
-</p>
-
 </div>
 
 <script>
 
+// mulai DJ saat user klik layar
+document.body.addEventListener("click", function(){
+document.getElementById("dj").play()
+},{once:true})
+
+// sound klik
 function playClick(){
 document.getElementById("click").play()
-}
-
-window.onload = function(){
-document.getElementById("dj").volume = 0.4
 }
 
 </script>
