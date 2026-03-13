@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JRII Official</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+color:white;
+text-align:center;
+background:linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#1a1a2e);
+background-size:400% 400%;
+animation:bg 10s infinite;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
+
+.container{
+max-width:420px;
+margin:auto;
+padding:40px 20px;
+}
+
+.profile{
+width:130px;
+height:130px;
+border-radius:50%;
+border:4px solid white;
+box-shadow:0 0 20px rgba(255,255,255,0.6);
+object-fit:cover;
+}
+
+.bio{
+opacity:0.9;
+margin-bottom:25px;
+}
+
+.link{
+display:block;
+background:white;
+color:black;
+padding:15px;
+margin:12px auto;
+border-radius:14px;
+text-decoration:none;
+font-weight:bold;
+max-width:320px;
+transition:0.3s;
+}
+
+.link:hover{
+transform:scale(1.08);
+box-shadow:0 0 15px white;
+}
+
+.footer{
+margin-top:30px;
+font-size:12px;
+opacity:0.6;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- AUDIO -->
+
+<audio id="dj" autoplay loop>
+<source src="dj.mp3">
+</audio>
+
+<audio id="click">
+<source src="click.m4a">
+</audio>
+
+<div class="container">
+
+<img class="profile" src="https://i.imgur.com/7yUvePI.jpeg">
+
+<h2>JRII Official</h2>
+
+<p class="bio">
+OPEN JASA BUAT MAP, DLL
+</p>
+
+<a class="link" onclick="playClick()" href="https://wa.me/6285762070977?text=MIN+MAU+ORDER+JASA+STUDIO+LITE+JRII">
+📩 Order WhatsApp
+</a>
+
+<a class="link" onclick="playClick()" href="https://chat.whatsapp.com/HuFeGn5fydl7npEoDzgqmg?mode=gi_t">
+👥 Join Grup
+</a>
+
+<a class="link" onclick="playClick()" href="https://whatsapp.com/channel/0029VbCXZVHKrWQoY9JiJq1A">
+📢 Saluran WhatsApp
+</a>
+
+<a class="link" onclick="playClick()" href="https://www.tiktok.com/@itsmejrii_?_r=1&_t=ZS-94eyXbklelA">
+🎵 TikTok
+</a>
+
+<a class="link" onclick="playClick()" href="https://saweria.co/fajriarninda">
+💰 Donasi Saweria
+</a>
+
+<p class="footer">
+© 2026 JRII Official
+</p>
+
+</div>
+
+<script>
+
+function playClick(){
+document.getElementById("click").play()
+}
+
+window.onload = function(){
+document.getElementById("dj").volume = 0.4
+}
+
+</script>
+
+</body>
+  </html>
